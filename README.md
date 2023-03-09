@@ -1,2 +1,2 @@
-# Ethereum-Explorer
+# Sui-Explorer
 study
