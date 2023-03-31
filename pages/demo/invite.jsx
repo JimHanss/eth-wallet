@@ -41,7 +41,7 @@ const useStyles = makeStyles(() => ({
 
 function Demo1() {
   // const classes = useStyles();
-  const [allTags, setAllTags] = useState<string[]>([]);
+  const [allTags, setAllTags] = useState([]);
   const [tag, setTag] = useState('');
   const [addressList, setAddressList] = useState([]);
   const [selectAddress, setSelectAddress] = useState([]);

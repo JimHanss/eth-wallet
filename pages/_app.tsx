@@ -3,6 +3,12 @@ import { appWithTranslation } from 'next-i18next';
 import '../styles/globals.css';
 import Head from 'next/head';
 
+declare global {
+  interface Window {
+    ethereum: any;
+  }
+}
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
