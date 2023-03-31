@@ -9,7 +9,7 @@ import {
   TextField,
 } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { AlchemyProvider, ethers } from 'ethers';
+import { ethers } from 'ethers';
 import React, { useState } from 'react';
 import { demo_one } from '../../global/contract';
 import _ from 'lodash';
