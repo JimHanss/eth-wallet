@@ -109,7 +109,6 @@ function Demo1() {
           }))
         );
         setIsLoading(false);
-        alert('success');
       } else {
         setIsLoading(false);
         alert('please install metamask');
