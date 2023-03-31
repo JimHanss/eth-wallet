@@ -7,7 +7,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Explorer | Sui</title>
+        <title>Demo</title>
+        {/* <title>Explorer | Sui</title> */}
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta property="og:title" content="My page title" key="title" />
         <meta charSet="utf-8" />
