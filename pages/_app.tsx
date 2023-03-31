@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 import '../styles/globals.css';
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 declare global {
   interface Window {
@@ -10,6 +11,15 @@ declare global {
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    async function requestAccount() {
+      await window.ethereum.request({ method: 'eth_requestAccounts' });
+    }
+
+    // 调用请求函数
+    requestAccount();
+  }, []);
+
   return (
     <>
       <Head>
