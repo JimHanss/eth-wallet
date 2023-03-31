@@ -95,7 +95,7 @@ function Demo1() {
 
       if (ethereum) {
         setIsLoading(true);
-        const provider = new ethers.BrowserProvider(ethereum);
+        const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = await provider.getSigner();
 
         const Demo = new ethers.Contract(demo_one.address, demo_one.abi, signer);
@@ -126,7 +126,7 @@ function Demo1() {
 
       if (ethereum) {
         setIsLoading(true);
-        const provider = new ethers.BrowserProvider(ethereum);
+        const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = await provider.getSigner();
 
         const Demo = new ethers.Contract(demo_one.address, demo_one.abi, signer);

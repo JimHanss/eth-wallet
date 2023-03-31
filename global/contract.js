@@ -13,7 +13,7 @@ export const demo_one = {
           type: 'string',
         },
       ],
-      name: 'addTag',
+      name: 'add',
       outputs: [],
       stateMutability: 'nonpayable',
       type: 'function',
@@ -111,8 +111,31 @@ export const demo_one = {
       stateMutability: 'view',
       type: 'function',
     },
+    {
+      inputs: [
+        {
+          internalType: 'address',
+          name: 'walletAddress',
+          type: 'address',
+        },
+        {
+          internalType: 'string',
+          name: 'oldTag',
+          type: 'string',
+        },
+        {
+          internalType: 'string',
+          name: 'newTag',
+          type: 'string',
+        },
+      ],
+      name: 'updateTag',
+      outputs: [],
+      stateMutability: 'nonpayable',
+      type: 'function',
+    },
   ],
-  address: '0x3c2B60f973430c5ca6D656db141b30298Dd6a52e',
+  address: '0x9a09910410c941FC1826c588Bd0b0f41c435810e',
 };
 
 export const test_proxy_1 = {
