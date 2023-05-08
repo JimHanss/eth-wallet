@@ -18,7 +18,7 @@
     "@mui/material": "^5.11.14",
     "@mui/styles": "^5.11.13",
     "@types/lodash": "^4.14.192",
-    "ethers": "5.4",
+    "ethers": "6.2.3",
     "lodash": "^4.17.21",
     "next": "latest",
     "next-i18next": "^11.0.0",
