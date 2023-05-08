@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   // console.log('provider', provider);
   // console.log('language', t);
 
-  return <div>{t('hello')}</div>;
+  return <div>{t('hello')}haha</div>;
 };
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
