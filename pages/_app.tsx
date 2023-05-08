@@ -3,6 +3,7 @@ import { appWithTranslation } from 'next-i18next';
 import '../styles/globals.css';
 import Head from 'next/head';
 import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 declare global {
   interface Window {
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
